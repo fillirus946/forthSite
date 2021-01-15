@@ -1,3 +1,7 @@
-.wrapper{
+.wrapper {
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "login img"
 }

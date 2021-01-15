@@ -1,11 +1,28 @@
 .login {
   border-left: 8px solid #ffe01b;
-  .login_container{
-    .login_wrap{
-      max-width: 480px;
-      .title{
-        
-      }
-    }
+  grid-area: login;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: center;
   }
+  &__logo {
+    height:38px;
+    width: 38px;
+    margin: 12px;
+  }
+  &__wrap {
+
+      max-width: 480px;
+    }
+}
+
+.terms{
+  margin-bottom: 30px;
 }

@@ -48,8 +48,40 @@ textarea,
 select {
   font: inherit; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "login img"; }
 
 .login {
-  border-left: 8px solid #ffe01b; }
+  border-left: 8px solid #ffe01b;
+  grid-area: login;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; }
+  .login__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: center; }
+  .login__logo {
+    height: 38px;
+    width: 38px;
+    margin: 12px; }
+  .login__wrap {
+    max-width: 480px; }
+
+.terms {
+  margin-bottom: 30px; }
+
+.about {
+  grid-area: img;
+  background-size: cover;
+  background-image: url(../img/php8e5cwl.jpeg);
+  background-position-x: center; }
