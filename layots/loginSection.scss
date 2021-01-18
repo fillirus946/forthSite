@@ -15,17 +15,18 @@ a{
   &__container {
     display: flex;
     flex-direction: column;
-    max-width: 480px;
     align-items: center;
+    justify-content: center;
+
   }
   &__logo {
-    height:38px;
-    width: 38px;
+    min-height:38px;
+    min-width: 38px;
     margin: 12px;
   }
   &__wrap {
-
       max-width: 480px;
+      padding: 0 15px 0 15px;
     }
   &__create {
     
@@ -34,17 +35,14 @@ a{
 
 .terms {
   margin-bottom: 30px;
-  margin: 0 0 30px 20px
+  margin: 0 30px 30px 30px;
+  color: rgba(36,28,21,0.65);
+  line-height: 1.5;
+  font-size: 14px;
 }
 
 
 .form {
-  &__username {
-    
-  }
-  &__password {
-
-  }
   &__button {
 
   }
@@ -54,6 +52,7 @@ a{
       width : 100%;
       margin-bottom: 20px;
     }
+
     &-forgot {
       
     }
@@ -73,7 +72,6 @@ a{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    
   }
   &__bottom {
     text-align: center;
@@ -81,8 +79,15 @@ a{
   }
 
 }
+.checkbox {
+  transform:scale(2);
+  opacity:0.9;
+  cursor:pointer;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
-.button {
+  .button {
   color: white;
   background-color: #007c89;
   border: none;
@@ -90,4 +95,9 @@ a{
   height: 48px;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+
+@media(max-width:1024px){
+
 }

@@ -55,6 +55,12 @@ a {
   grid-template-rows: auto;
   grid-template-areas: "login img"; }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "login"; } }
+
 * {
   font-family: 'Open Sans', sans-serif; }
 
@@ -70,18 +76,22 @@ a {
   .login__container {
     display: flex;
     flex-direction: column;
-    max-width: 480px;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .login__logo {
-    height: 38px;
-    width: 38px;
+    min-height: 38px;
+    min-width: 38px;
     margin: 12px; }
   .login__wrap {
-    max-width: 480px; }
+    max-width: 480px;
+    padding: 0 15px 0 15px; }
 
 .terms {
   margin-bottom: 30px;
-  margin: 0 0 30px 20px; }
+  margin: 0 30px 30px 30px;
+  color: rgba(36, 28, 21, 0.65);
+  line-height: 1.5;
+  font-size: 14px; }
 
 .form__username-input {
   height: 48px;
@@ -101,6 +111,13 @@ a {
 
 .form__bottom {
   text-align: center; }
+
+.checkbox {
+  transform: scale(2);
+  opacity: 0.9;
+  cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer; }
 
 .button {
   color: white;
