@@ -18,32 +18,37 @@
                             Log In
                         </h1>
                         <p>Need a Mailchimp account?
-                            <a href="">Create an account</a>
+                            <a class="login__create" href="">Create an account</a>
                         </p>
                     </div>
                             
-                    <form action="none">
-                        <div class="input__suername">
+                    <form class="form" action="none">
+                        <div class="form__suername">
                             <label for="">Usename
-                                <input type="username" name="username" id="">
+                                <input class="form__username-input" type="username" name="username" id="">
                             </label>
                         </div>
-                        <div class="input__password">
+                        <div class="form__password">
                             <label for="">Password
-                                <input type="password" name="password" id="">
+                                <input class="form__password-input" type="password" name="password" id="">
                             </label>
                         </div>
-                        <div class="button__container">
+                        <div class="form__button">
                             <button class="button">Long In</button>
                         </div>
-                            <label for=""> Keep me logged in
+                        <div class="form__bottom">
+                            <label for="">
                                 <input type="checkbox" name="keep" id="">
+                                Keep me logged in
                             </label>
+                            <div class="form__forgot">
+                                <a href="#" class="form__username-forgot">Forgot username?</a>
+                                <a href="#" class="form__password-forgot">Forgot password?</a>
+                            </div>
                         </div>
-                        <a href="#" class="forgot__username">Forgot username?</a>
-                        <a href="#" class="forgot__password">Forgot password?</a>
                     </form>
                 </div>
+            </div>
                 <div class="terms">
                     ©2001–2021 All Rights Reserved.
                     Mailchimp® is a registered trademark of The Rocket Science Group.

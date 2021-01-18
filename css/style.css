@@ -35,9 +35,6 @@ li[class] {
   list-style-type: none;
   list-style: none; }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto; }
-
 img {
   max-width: 100%;
   display: block; }
@@ -58,13 +55,18 @@ a {
   grid-template-rows: auto;
   grid-template-areas: "login img"; }
 
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  color: #007c89; }
+
 .login {
   border-left: 8px solid #ffe01b;
   grid-area: login;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   .login__container {
     display: flex;
     flex-direction: column;
@@ -78,7 +80,36 @@ a {
     max-width: 480px; }
 
 .terms {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin: 0 0 30px 20px; }
+
+.form__username-input {
+  height: 48px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.form__password-input {
+  height: 48px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.form__forgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px; }
+
+.form__bottom {
+  text-align: center; }
+
+.button {
+  color: white;
+  background-color: #007c89;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
 .about {
   grid-area: img;
