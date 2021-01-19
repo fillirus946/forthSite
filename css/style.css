@@ -59,7 +59,9 @@ a {
   .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "login"; } }
+    grid-template-areas: "login"; }
+  .about {
+    display: none; } }
 
 * {
   font-family: 'Open Sans', sans-serif; }
